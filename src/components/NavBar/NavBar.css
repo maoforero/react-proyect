@@ -2,5 +2,51 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
 
+/*Header General */
+
+div.container__NavBar__Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: auto;
+}
+
+/*Contenedor icono */
+
+.container__NavBar__Icon{
+    height: 48px;
+    margin: 15px 5px;
+    padding: 15px;
+    width: 48px;
+}
+
+/*Contenedos Menu */
+
+.container__NavBar__Menu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul.NavBar__Menu--ul{
+    display: flex;
+}
+
+li.NavBar--item{
+    list-style: none;
+    margin: 2px 10px;
+    padding: 5px;
+}
+
+li.NavBar--item > a {
+    color: black;
+    text-decoration: none;
+}
+
+li.NavBar--item > a:hover{
+    color: darkgreen;
 }
