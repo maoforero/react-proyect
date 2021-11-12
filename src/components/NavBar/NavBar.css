@@ -9,7 +9,7 @@
 div.container__NavBar__Header{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: fit-content;
     width: auto;
 }
@@ -34,6 +34,7 @@ div.container__NavBar__Header{
 
 ul.NavBar__Menu--ul{
     display: flex;
+    margin: 5px 15px;
 }
 
 li.NavBar--item{

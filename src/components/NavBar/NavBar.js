@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <div className="container__NavBar__Header">
             <div className="container__NavBar__Icon" id="navBar__Icon">
-                <img src="./components/NavBar/assets/cine_icon.png" alt="icono principal"></img>
+                <img></img>
             </div>
             <div className="container__NavBar__Menu">
                 <nav className="NavBar__Menu" id="navBar_Main">
