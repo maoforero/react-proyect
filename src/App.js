@@ -1,27 +1,19 @@
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import React from "react";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
-function App() {
-  return (
+import './App.css'
 
-    <div className="App">
-      <NavBar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>Tienda de distribucion de boleteria de cine</code> 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <NavBar />
+        <ItemListContainer title="Finca raiz"/>
+      </div>
+    );
+  };
+};
 
 export default App;

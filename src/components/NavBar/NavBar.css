@@ -17,12 +17,19 @@ div.container__NavBar__Header{
 /*Contenedor icono */
 
 .container__NavBar__Icon{
+    align-self: center;
+    display: flex;
     height: 48px;
+    justify-content: center;
     margin: 15px 5px;
     padding: 15px;
     width: 48px;
 }
 
+.home_icon{
+    height: 22px;
+    width: 22px;
+}
 /*Contenedos Menu */
 
 .container__NavBar__Menu{
