@@ -1,5 +1,5 @@
 import './NavBar.css';
-import CardWidget from '../CardWidget/CardWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import home_icon from './assets/home_icon.png';
 
 const NavBar = () => {
@@ -16,7 +16,7 @@ const NavBar = () => {
                         <li className="NavBar--item"><a href="#">Teatro</a></li>
                         <li className="NavBar--item"><a href="#">Perfil</a></li>
                         
-                        <CardWidget />
+                        <CartWidget />
                     </ul>
                 </nav>
             </div>
