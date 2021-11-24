@@ -10,7 +10,7 @@ class App extends React.Component {
     return(
       <div>
         <NavBar />
-        <ItemListContainer title="Finca raiz"/>
+        <ItemListContainer />
       </div>
     );
   };
