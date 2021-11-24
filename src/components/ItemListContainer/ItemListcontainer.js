@@ -11,7 +11,7 @@ const ItemListContainer = () => {
     //Funcion incremento de clicks
     const addClick = () =>{
         if(click > 9){
-            alert(`cantidad Limitada`);
+            alert(`Cantidad limitada`);
         }else{
             setClick(click + 1);
         };
