@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <NavBar />
-        <ItemListContainer />
+        <NavBar title="TicketMaster"/>
+        <ItemListContainer  />
       </div>
     );
   };

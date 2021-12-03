@@ -1,23 +1,24 @@
-import React from 'react'
-import { Fragment } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Fragment } from 'react';
+import Item from '../Item/Item';
 
 const ItemList = () => {
-    return (
-        <Fragment>
-            <div>
-                <h6></h6>
-            </div>
-            <div>
-                <section>
-                    <img src="" alt="" />
-                </section>
+    const[movie, setMovies] = useState([]);
 
-                <p></p>
-            </div>
-            <div>
-                <button></button>
-            </div>
-        </Fragment>
+    console.log(movie);
+
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users#')
+            .then((response) => response.json())
+            .then((json) => (setMovies(json)));
+    }, []);
+
+    return (
+        <div>
+            {movie.map((movie) =>{
+                return <Item />;
+            })}
+        </div>
     )
 }
 

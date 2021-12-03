@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Batman V Superman",
+        "gender": "Action",
+        "time": "240",
+        "language": "English",
+        "Director": "Zack Snyder"
+    },
+    {
+        "id": 2,
+        "name": "Encanto",
+        "gender": "Adventure",
+        "time": "130",
+        "language": "English",
+        "Director": "Byron Howard"
+    },
+    {
+        "id": 3,
+        "name": "Eternals",
+        "gender": "Action",
+        "time": "180",
+        "language": "Chinese",
+        "Director": "Chloe Zhao"
+    },
+    {
+        "id": 4,
+        "name": "Clifford",
+        "gender": "Adventure",
+        "time": "97",
+        "language": "Spanish",
+        "Director": "Walt Becker"
+    },
+    {
+        "id": 5,
+        "name": "Matrix Resurection",
+        "gender": "Action",
+        "time": "148",
+        "language": "Spanish",
+        "Director": "Lana Wachowski"
+    },
+    {
+        "id": 6,
+        "name": "Sypderman NoWay Home",
+        "gender": "Adventure",
+        "time": "150",
+        "language": "English",
+        "Director": "Jon Watts"
+    },
+    {
+        "id": 7,
+        "name": "The ring resurrection",
+        "gender": "Horror",
+        "time": "95",
+        "language": "English",
+        "Director": "Norio Tsuruta"
+    },
+    {
+        "id": 8,
+        "name": "Amenaza bajo el agua",
+        "gender": "Suspense",
+        "time": "125",
+        "language": "Spanish",
+        "Director": "Andrew Traucki"
+    },
+    {
+        "id": 9,
+        "name": "Rey Richard",
+        "gender": "Family",
+        "time": "138",
+        "language": "English",
+        "Director": "Reinaldo Marcus Green"
+    },
+    {
+        "id": 10,
+        "name": "The man who sold his skin",
+        "gender": "Drama",
+        "time": "104",
+        "language": "English",
+        "Director": "Kaouther Ben Hania"
+    }
+
+]

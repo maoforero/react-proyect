@@ -1,16 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
-import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 
-
-const ItemListContainer = () => {
-
+const ItemListcontainer = () => {
     return (
         <div>
-            <ItemCount />
+            <h1>Peliculas en cartelera</h1>
+            <ItemList />
         </div>
     )
 }
 
-export default ItemListContainer;
+export default ItemListcontainer
