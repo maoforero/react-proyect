@@ -13,3 +13,8 @@
     padding: 18px;
     width: 168px;
 }
+
+.container__item > img {
+    height: 80px;
+    width: 80px;
+}

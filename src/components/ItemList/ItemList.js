@@ -8,15 +8,15 @@ const ItemList = () => {
     console.log(movie);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users#')
-            .then((response) => response.json())
+        fetch("https://gist.github.com/saniyusuf/406b843afdfb9c6a86e25753fe2761f4")
+            .then((resp) => resp.json())
             .then((json) => (setMovies(json)));
     }, []);
 
     return (
         <div>
             {movie.map((movie) =>{
-                return <Item />;
+                return <Item data={movie}/>;
             })}
         </div>
     )
