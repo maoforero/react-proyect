@@ -28,7 +28,7 @@ const Item = ({data}) => {
     const clickCarrito = () =>{
         let producto;
         click > 1 ? producto = 'productos' : producto = 'producto';
-        alert(`Nuevos ${click} ${producto} en el carrito`);
+            alert(`## ${click} ${producto} en el carrito`);
     };
 
     return (
@@ -53,8 +53,8 @@ const Item = ({data}) => {
             {
                 click > 0 ? 
                 <div className="container__button--comprar">
-                    <button className="button--comprar">
-                        <img className="iconComprar" src={carritoIcon} alt="" onClick={() => clickCarrito(click)}/>
+                    <button className="button--comprar" onClick={() => clickCarrito(click)}>
+                        <img className="iconComprar" src={carritoIcon} alt="" />
                     </button>
                 </div>
                 :
