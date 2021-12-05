@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 .container__item{
     align-items: center;
     border-radius: 15px;
@@ -25,6 +26,7 @@
     box-shadow: inset 5px 5px 10px #bcbcbc,
             inset -5px -5px 10px #ffffff;
 }
+
 .container__item > img {
     height: 80px;
     width: 80px;

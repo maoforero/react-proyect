@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
+import './ItemList.css';
+
 
 const ItemList = () => {
     const[movie, setMovies] = useState([]);
-
-    console.log(movie);
 
     useEffect(() => {
         fetch("https://api.github.com/users")
@@ -13,7 +13,7 @@ const ItemList = () => {
     }, []);
 
     return (
-        <div>
+        <div className="container__ItemList">
             {movie.map((movie) =>{
                 return <Item data={movie} key={movie.id}/>;
             })}

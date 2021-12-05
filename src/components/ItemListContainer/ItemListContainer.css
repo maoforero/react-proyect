@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ItemList{
+    display: flex;
+    flex-direction: row;
+}
+
+.ItemListContainer{
+    margin: auto;
+    width: 71%;
+}
+
