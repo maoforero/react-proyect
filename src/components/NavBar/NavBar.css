@@ -23,12 +23,18 @@ div.container__NavBar__Header{
     justify-content: center;
     margin: 15px 5px;
     padding: 15px;
-    width: 48px;
+    width: auto;
 }
 
 .home_icon{
-    height: 22px;
-    width: 22px;
+    height: 42px;
+    width: 42px;
+}
+
+.home_title{
+    display: flex;
+    margin-left: 10px;
+    font-size: 18px;
 }
 /*Contenedos Menu */
 
@@ -52,8 +58,10 @@ li.NavBar--item{
 li.NavBar--item > a {
     color: black;
     text-decoration: none;
+    font-size: 18px;
 }
 
 li.NavBar--item > a:hover{
     color: darkgreen;
+    
 }
