@@ -8,26 +8,23 @@
 .container__item{
     align-items: center;
     border-radius: 15px;
-    background: #f5f4f4;
-    box-shadow:   5px 5px 10px #d7d7d7,-5px -5px 10px #e9e9e9;
+    background: #eeeded;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 168px;
+    height: 208px;
     justify-content: center;
     margin: 21px 16px;
     padding: 11px;
-    width: 168px;
+    width: 188px;
 }
 
 .container__item:hover{
-    border-radius: 23px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #bcbcbc,
-            inset -5px -5px 10px #ffffff;
+    color: rgb(2, 20, 177);
 }
 
 .container__item > img {
+    border-radius: 5px;
     height: 80px;
     width: 80px;
 }
@@ -37,6 +34,74 @@
     font-weight: bold;
 }
 
+.container__item--Title:hover{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*buttons*/
+
+.container__item--button{
+display: flex;
+flex-direction: row;
+}
+
+.container__info--count{
+    align-self: center;
+    margin: 0 15px;
+}
+
+
 .container__item--Title, .container__item--info{
     padding: 7px;
+}
+
+.item--buttonComprar, .item--buttonFav {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #259204;
+    font-size: 12px;
+    height: 19px;
+    margin: 5px;
+    width: 33px;
+}
+
+.item--buttonFav:hover{
+    background-color: rgb(201, 201, 201);
+    color: white;
+}
+
+.item--buttonComprar:hover{
+    background-color: rgb(255, 197, 71);
+    color: rgb(255, 255, 255);;
+}
+
+.item--buttonComprar:active,.item--buttonFav:active {
+    color: #070707;
+}
+
+.container__button--comprar{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+.button--comprar{
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 26px;
+    width: 105px;
+}
+
+.button--comprar:active{
+    background-color: rgb(255, 197, 71);
+}
+
+.iconComprar{
+    width: 16px;
 }
