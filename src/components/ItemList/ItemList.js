@@ -8,28 +8,29 @@ const ItemList = () => {
 
     useEffect(() => {
         setTimeout(() => {
+
+                setMovies(Data)
                 // fetch("https://api.github.com/users")
                 // .then(response => response.json())
                 // .then(json => setMovies(json))
                 // .catch(error => console.log('ERROR:', error))
-        }, 2000)
+        }, 3000)
 
     }, []);
+
+    console.log(movie)
 
     return (
         <div className="container__ItemList">
             {
-                Data.map( (item) => {
+                Data.map( (movie) => {
                     return(
                         <>
-                            <Item info={item} key={item.id}/>
+                            <Item info={movie} key={movie.id}/>
                         </>  
                     )
                 })
             }
-            {/* {movie.map((movie) =>{
-                return <Item data={movie} key={movie.id}/>;
-            })} */}
         </div>
     )
 }

@@ -28,7 +28,7 @@ const Item = ({ info }) => {
     const clickCarrito = () =>{
         let boleto;
         click > 1 ? boleto = 'Boletos' : boleto = 'boleto';
-            alert(`## ${click} ${boleto} en el carrito`);
+            alert(`## ${click} ${boleto} en el carrito de: ${info.name}`);
     };
     
     console.log(`Informacion Productos:`,info);
