@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Fragment } from 'react';
 import Item from '../Item/Item';
 
 const ItemList = () => {
@@ -8,7 +7,7 @@ const ItemList = () => {
     console.log(movie);
 
     useEffect(() => {
-        fetch("https://gist.github.com/saniyusuf/406b843afdfb9c6a86e25753fe2761f4")
+        fetch("https://api.github.com/users")
             .then((resp) => resp.json())
             .then((json) => (setMovies(json)));
     }, []);
@@ -16,7 +15,7 @@ const ItemList = () => {
     return (
         <div>
             {movie.map((movie) =>{
-                return <Item data={movie}/>;
+                return <Item data={movie} key={movie.id}/>;
             })}
         </div>
     )
