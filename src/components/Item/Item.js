@@ -25,6 +25,12 @@ const Item = ({data}) => {
         }
     }
 
+    const clickCarrito = () =>{
+        let producto;
+        click > 1 ? producto = 'productos' : producto = 'producto';
+        alert(`Nuevos ${click} ${producto} en el carrito`);
+    };
+
     return (
         <div className="container__item">
             <img src={data.avatar_url} alt="" className="item_img"/>
@@ -43,12 +49,22 @@ const Item = ({data}) => {
                     -
                 </button>
             </div>
-            <div className="container__button--comprar">
-                <button className="button--comprar">
-                    <img className="iconComprar" src={carritoIcon} alt="" />
-                </button>
-            </div>
 
+            {
+                click > 0 ? 
+                <div className="container__button--comprar">
+                    <button className="button--comprar">
+                        <img className="iconComprar" src={carritoIcon} alt="" onClick={() => clickCarrito(click)}/>
+                    </button>
+                </div>
+                :
+                <div className="container__button--comprarNoValid">
+                    <button className="button--comprarNoValid">
+                        <img className="iconComprarNoValid" src={carritoIcon}  alt=""/>
+                    </button>
+
+                </div>
+            }
         </div>
     )
 }

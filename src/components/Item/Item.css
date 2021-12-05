@@ -61,7 +61,7 @@ flex-direction: row;
     border: none;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    color: #259204;
+    color: #080808;
     font-size: 12px;
     height: 19px;
     margin: 5px;
@@ -87,6 +87,11 @@ flex-direction: row;
     margin-top: 10px;
 }
 
+.container__button--comprarNoValid{
+    display: flex;
+    margin-top: 10px;
+}
+
 
 
 .button--comprar{
@@ -103,5 +108,18 @@ flex-direction: row;
 }
 
 .iconComprar{
+    width: 16px;
+}
+
+.button--comprarNoValid{
+    background-color: rgb(179, 179, 179);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 26px;
+    width: 105px;
+}
+
+.iconComprarNoValid{
     width: 16px;
 }
