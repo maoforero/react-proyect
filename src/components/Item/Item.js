@@ -3,7 +3,7 @@ import './Item.css'
 import carritoIcon from './assets/carrito.png';
 
 
-const Item = ({data}) => {
+const Item = ({ info }) => {
 
     let count = 0;
 
@@ -26,16 +26,18 @@ const Item = ({data}) => {
     }
 
     const clickCarrito = () =>{
-        let producto;
-        click > 1 ? producto = 'productos' : producto = 'producto';
-            alert(`## ${click} ${producto} en el carrito`);
+        let boleto;
+        click > 1 ? boleto = 'Boletos' : boleto = 'boleto';
+            alert(`## ${click} ${boleto} en el carrito`);
     };
+    
+    console.log(`Informacion Productos:`,info);
 
     return (
         <div className="container__item">
-            <img src={data.avatar_url} alt="" className="item_img"/>
+            <img src={info.picture} alt="" className="item_img"/>
             <div className="container__item--Title">
-                <span className="item--title">{data.login}</span>
+                <span className="item--title">{info.name}</span>
             </div>
             <div className="container__item--button">
                 <button className="item--buttonComprar" onClick={addClick}>
@@ -59,7 +61,7 @@ const Item = ({data}) => {
                 </div>
                 :
                 <div className="container__button--comprarNoValid">
-                    <button className="button--comprarNoValid">
+                    <button className="button--comprarNoValid" disabled>
                         <img className="iconComprarNoValid" src={carritoIcon}  alt=""/>
                     </button>
 
