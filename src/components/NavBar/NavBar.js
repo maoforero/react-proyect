@@ -13,10 +13,8 @@ const NavBar = ({title}) => {
                 <nav className="NavBar__Menu" id="navBar_Main">
                     <ul className="NavBar__Menu--ul">
                         <li className="NavBar--item"><a href="#">Inicio</a></li>
-                        <li className="NavBar--item"><a href="#">Cartelera</a></li>
-                        <li className="NavBar--item"><a href="#">Teatro</a></li>
-                        <li className="NavBar--item"><a href="#">Perfil</a></li>
-                        
+                        <li className="NavBar--item"><a href="#">Peliculas</a></li>
+                        <li className="NavBar--item"><a href="#">Series</a></li> 
                         <CartWidget />
                     </ul>
                 </nav>
