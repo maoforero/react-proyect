@@ -62,3 +62,7 @@ ul.NavBar__Menu--ul{
     color: rgb(4, 219, 191);
     
 }
+
+.active{
+    color: blueviolet;
+}
