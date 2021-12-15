@@ -4,6 +4,11 @@ import ItemListContainer from './components/ItemListContainer/ItemListcontainer'
 import './App.css'
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
+//Views
+
+import Home from './views/Home;';
+import Contact from './views/Contact';
+import About from './views/About';
 
 class App extends React.Component {
   render() {
