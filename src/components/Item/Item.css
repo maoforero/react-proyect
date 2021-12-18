@@ -28,13 +28,15 @@
     width: 80px;
 }
 
-.container__item--Title{
+.container__item--Title {
     align-self: center;
+    color: black;
     display: flex;
     font-size: 15px;
     font-weight: bold;
     justify-self: center;
     margin: auto;
+    text-decoration: none;
 }
 
 .container__item--Title:hover{

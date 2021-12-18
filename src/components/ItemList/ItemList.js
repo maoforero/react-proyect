@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 import './ItemList.css';
 import Data from '../../list.json'
+import { Link } from 'react-router-dom';
 
 const ItemList = () => {
     const[element, setElement] = useState([]);
@@ -9,7 +10,7 @@ const ItemList = () => {
     useEffect(() => {
         setTimeout(() => {
                 setElement(Data)
-        }, 3000)
+        }, 1500)
     }, []);
 
     console.log(element)
@@ -20,7 +21,9 @@ const ItemList = () => {
                 Data.map( (movie) => { 
                     return(
                         <div key={movie.id}>
-                            <Item info={movie}/>
+                            <Link to={`/element/${movie.id}`} className='linkElement'>
+                                <Item info={movie}/>
+                            </Link>
                         </div>
                     );
                 })

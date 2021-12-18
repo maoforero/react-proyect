@@ -6,6 +6,11 @@ const ItemDetails = () => {
     let count = 0;
 
     const [click, setClick] = useState(count);
+    const [producto, setProductos] = useState([]);
+
+    useEffect( ( match ) => {
+        console.log(match);
+    }, [])
 
     const addPro = () => {
         if(click > 5){
