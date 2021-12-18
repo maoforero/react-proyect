@@ -16,6 +16,7 @@ import Series from "./views/Series";
 import Contact from './views/Contact';
 import About from './views/About';
 import Error from './views/Error';
+import ItemDetail from './views/ItemDetails';
 
 
 class App extends React.Component {
@@ -31,7 +32,9 @@ class App extends React.Component {
             <Route path="/series" element={<Series/>}/>
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
+            <Route path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />
+
           </Routes>
           {/* <NavBar title="TicketMaster"/>
           <ItemListContainer  />
