@@ -14,8 +14,8 @@ const NavBar = ({title}) => {
                 <nav className="NavBar__Menu" id="navBar_Main">
                     <ul className="NavBar__Menu--ul">
                         <NavLink className="NavBar--item" to="/" activeClassName="active">Inicio</NavLink>
-                        <NavLink className="NavBar--item" to="/" activeClassName="active">Peliculas</NavLink>
-                        <NavLink className="NavBar--item" to="/" activeClassName="active">Series</NavLink>  
+                        <NavLink className="NavBar--item" to="/movies" activeClassName="active">Peliculas</NavLink>
+                        <NavLink className="NavBar--item" to="/series" activeClassName="active">Series</NavLink>  
                         <NavLink className="NavBar--item" to="/about" activeClassName="active">Información</NavLink> 
                         <NavLink className="NavBar--item" to="contact" activeClassName="active">Contacto</NavLink> 
                         <CartWidget />
