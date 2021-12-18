@@ -16,7 +16,7 @@ import Series from "./views/Series";
 import Contact from './views/Contact';
 import About from './views/About';
 import Error from './views/Error';
-import ItemDetail from './views/ItemDetails';
+import Element from './views/Element';
 
 
 class App extends React.Component {
@@ -32,7 +32,7 @@ class App extends React.Component {
             <Route path="/series" element={<Series/>}/>
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
-            <Route path="/itemdetail/:id" element={<ItemDetail/>} />
+            <Route path="/element/:id" element={<Element/>} />
             <Route path="*" element={<Error/>} />
 
           </Routes>
