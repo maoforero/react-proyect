@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 import './ItemList.css';
-import Data from '../../movies.json'
+import Data from '../../list.json'
 
 const ItemList = () => {
-    const[movie, setMovies] = useState([]);
+    const[element, setElement] = useState([]);
 
     useEffect(() => {
         setTimeout(() => {
-                setMovies(Data)
+                setElement(Data)
                 // fetch("https://api.github.com/users")
                 // .then(response => response.json())
                 // .then(json => setMovies(json))
@@ -16,7 +16,7 @@ const ItemList = () => {
         }, 3000)
     }, []);
 
-    console.log(movie)
+    console.log(element)
 
     return (
         <div className="container__ItemList">

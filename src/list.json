@@ -161,7 +161,7 @@
     },
     {
         "id": 2001,
-        "title": "Harry Potter and the Curse Child",
+        "name": "Harry Potter and the Curse Child",
         "gender": "Adventure, Suspense",
         "time": "280",
         "language": "English",
@@ -170,7 +170,7 @@
     },
     {
         "id": 2002,
-        "title": "MJ the Musical",
+        "name": "MJ the Musical",
         "gender": "Musical",
         "time": "190",
         "language": "English",
@@ -179,7 +179,7 @@
     },
     {
         "id": 2003,
-        "title": "The Lion King",
+        "name": "The Lion King",
         "gender": "Adventure",
         "time": "121",
         "language": "English",
@@ -188,7 +188,7 @@
     },
     {
         "id": 2004,
-        "title": "Macbeth",
+        "name": "Macbeth",
         "gender": "Drama",
         "time": "165",
         "language": "English",
@@ -197,7 +197,7 @@
     },
     {
         "id": 2005,
-        "title": "Moulin Rogue The Musical",
+        "name": "Moulin Rogue The Musical",
         "gender": "Musical",
         "time": "133",
         "language": "English",
@@ -206,7 +206,7 @@
     },
     {
         "id": 2006,
-        "title": "Aladdin the musical",
+        "name": "Aladdin the musical",
         "gender": "Musical",
         "time": "120",
         "language": "English",
@@ -215,7 +215,7 @@
     },
     {
         "id": 2007,
-        "title": "The phantom of the Opera",
+        "name": "The phantom of the Opera",
         "gender": "Musical",
         "time": "139",
         "language": "English",
@@ -224,7 +224,7 @@
     },
     {
         "id": 2008,
-        "title": "The Cher Show",
+        "name": "The Cher Show",
         "gender": "Drama",
         "time": "210",
         "language": "English",
@@ -233,7 +233,7 @@
     },
     {
         "id": 2009,
-        "title": "Pretty Woman",
+        "name": "Pretty Woman",
         "gender": "Musical",
         "time": "182",
         "language": "English",
@@ -242,7 +242,7 @@
     },
     {
         "id": 20010,
-        "title": "Jagged Little Pill",
+        "name": "Jagged Little Pill",
         "gender": "Drama",
         "time": "136",
         "language": "English",
