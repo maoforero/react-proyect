@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CartWidget.css"
-import car_icon from './assets/car_icon.png';
+import car_icon from '../../assets/car_icon.png';
 
 
 

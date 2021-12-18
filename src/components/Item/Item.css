@@ -19,7 +19,7 @@
 }
 
 .container__item:hover{
-    color: rgb(2, 20, 177);
+    color: rgb(231, 95, 5);
 }
 
 .container__item > img {
@@ -47,14 +47,32 @@
 
 .container__item--button{
 display: flex;
-flex-direction: row;
+
+}
+
+.item--buttonDetails{
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    height: 26px;
+    width: 105px;
+}
+
+.item--buttonDetails:hover{
+    background-color: rgb(238, 183, 4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 26px;
+    width: 105px;
 }
 
 .container__info--count{
     align-self: center;
     margin: 0 15px;
 }
-
 
 .container__item--Title, .container__item--info{
     padding: 7px;

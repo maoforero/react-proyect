@@ -10,13 +10,13 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 //Views
 
-import Home from './views/Home';
-import Movies from './views/Movies';
-import Series from "./views/Series";
-import Contact from './views/Contact';
-import About from './views/About';
-import Error from './views/Error';
-import Element from './views/Element';
+import Home from './views/Home/Home';
+import Movies from './views/Movies/Movies';
+import Series from "./views/Series/Series";
+import Contact from './views/Contact/Contact';
+import About from './views/About/About';
+import Error from './views/Error/Error';
+import Element from './views/Element/Element';
 
 
 class App extends React.Component {
@@ -34,11 +34,7 @@ class App extends React.Component {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/element/:id" element={<Element/>} />
             <Route path="*" element={<Error/>} />
-
           </Routes>
-          {/* <NavBar title="TicketMaster"/>
-          <ItemListContainer  />
-          <ItemDetailContainer /> */}
         </div>  
       </Router>
     );

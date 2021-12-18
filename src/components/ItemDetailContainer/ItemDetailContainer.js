@@ -1,21 +1,34 @@
 // Contenedor de ItemDetail
-import React, {useState, useEffect} from 'react'
-import data from "../../series.json"
-const ItemDetailContainer = () => {
-    const [item, setItem] = useState({});
 
-    useEffect(() =>{
-        setTimeout(() =>{
-            setItem(data)
+import React, { useEffect, useState } from 'react';
+import ItemDetails from '../ItemDetail/ItemDetails';
+import product from '../../list.json';
+
+const ItemDetailContainer = () => {
+    const [element, setElement] = useState([]);
+
+    console.log('Estado:', element);
+
+    useEffect(() => {
+        setTimeout( () => {
+            setElement(product)
         }, 2000)
-    });
+    }, [])
 
     return (
         <div>
-            <img src="#" alt="" />
-            <h1>{item.name}</h1>
+            <h1>Productos</h1>
+            {
+                element.map( (prod) => {
+                    return(
+                        <div key={prod.id}>
+                            <ItemDetails/>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
-};
+}
 
-export default ItemDetailContainer;
+export default ItemDetailContainer

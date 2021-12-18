@@ -1,32 +1,69 @@
-export default ItemDetails
-
 import React, { useEffect, useState } from 'react'
-import listaElementos from '../list.json'
-
+import carritoIcon from '../../assets/carrito.png'
 
 const ItemDetails = () => {
-    const [element, setElement] = useState([]);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setElement(listaElementos)
-        }, 1500);
+    let count = 0;
 
-    }, [])
+    const [click, setClick] = useState(count);
+
+    const addPro = () => {
+        if(click > 5){
+            alert(`Cantidad limitada ${click}`);
+        }else{
+            setClick(click + 1 );
+        };
+    };
+
+    const rmPro = () => {
+        if(click < 0){
+            alert(`Valor no permitido`);
+        }else{
+            setClick(click - 1);
+        };
+    };
+
+    const buyPro = () => {
+        let pro;
+        click > 1 ? pro = 'boletos' : pro = 'boleto';
+        alert(`## ${click} ${pro} en el carrito de`)
+    }
 
     return (
         <div className='container__mainItemDetails'>
-            <div className='container__mainItemDetails--img'></div>
+            <h1>Elementos</h1>
+            <div className='container__mainItemDetails--img'>
+                <img src="#" alt="Poster oficial" />
+            </div>
             <div className='container__mainItemDetails-info'>
                 <div className='mainItemDetails--description'>
-                    <p className='description'></p>
-                    <p className='description'></p>
-                    <p className='description'></p>
+                    <h4 className='description'>Lorem</h4>
+                    <p className='description'>Lorem</p>
+                    <p className='description'>Lorem</p>
                 </div>
-                <div className='mainItemDetails--actions'>
-                    <button className='addTicket'>+</button>
-                    <button className='removeTicket'>-</button>
+                <div className='mainItemDetails--selection'>
+                    <div className='mainItemDetails--AddAndRm'>
+                        <button className='addTicket' onClick={addPro} >+</button>
+                        <button className='removeTicket' onClick={rmPro} >-</button>
+                    </div>
+                    <div className="container__info--count">
+                            <span className="info--count">{click}</span>
+                    </div>
                 </div>
+                {
+                    click > 0 ?
+                <div className='mainItemDetails--buy'>
+                    <button className='buyTicket'>
+                        <img src={carritoIcon} alt="Boton de comprar" />
+                    </button>
+                </div>
+                :
+                <div className='mainItemDetails--buy'>
+                    <button className='buyTicket' disabled>
+                        <img src={carritoIcon} alt="Boton de comprar" onClick={buyPro}/>
+                    </button>
+                </div>
+                }
             </div>
         </div>
     )
