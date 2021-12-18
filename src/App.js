@@ -6,11 +6,13 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 
 //React Router Dom
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import { Link } from 'react-router-dom';
+
 
 //Views
 
 import Home from './views/Home';
+import Movies from './views/Movies';
+import Series from "./views/Series";
 import Contact from './views/Contact';
 import About from './views/About';
 import Error from './views/Error';
@@ -25,6 +27,8 @@ class App extends React.Component {
         <NavBar title="TicketMaster"/>
           <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/movies" element={<Movies/>}/>
+            <Route path="/series" element={<Series/>}/>
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
             <Route path="*" element={<Error/>} />
