@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const CarItem = () => {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <div>
+            </div>
+        </Fragment>
     )
 }
 

@@ -1,12 +1,25 @@
-import React, { Fragment } from 'react'
+import React from 'react';
+import { FaStar} from "react-icons/fa";
 
-const ScoreProduct = () => {
+
+const ScoreProduct = (info) => {
     return (
-        <Fragment>
-            <div>
-                <h1>hola</h1>
+        <>
+            <div className='score'>
+                {[...Array(5).map(star => {
+                    return (
+                        <label>
+                            <input type="radio" name="score">
+                                <FaStar size={10}/>
+                            </input>
+                            
+                        </label>
+                    );
+                })]
+
+                }
             </div>
-        </Fragment>
+        </>
     )
 }
 

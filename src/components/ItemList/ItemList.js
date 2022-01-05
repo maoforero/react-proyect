@@ -21,9 +21,9 @@ const ItemList = () => {
                 Data.map( (movie) => { 
                     return(
                         <div key={movie.id}>
-                            <Link to={`/element/${movie.id}`} className='linkElement'>
+                            {/* <Link to={`/element/${movie.id}`} className='linkElement'> */}
                                 <Item info={movie}/>
-                            </Link>
+                            {/* </Link> */}
                         </div>
                     );
                 })
