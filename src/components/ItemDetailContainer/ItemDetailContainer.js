@@ -7,8 +7,6 @@ import product from '../../list.json';
 const ItemDetailContainer = () => {
     const [element, setElement] = useState([]);
 
-    console.log('Estado:', element);
-
     useEffect(() => {
         setTimeout( () => {
             setElement(product)

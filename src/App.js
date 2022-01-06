@@ -1,8 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from './components/ItemListContainer/ItemListcontainer';
 import './App.css'
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 //React Router Dom
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
@@ -32,7 +30,7 @@ class App extends React.Component {
             <Route path="/series" element={<Series/>}/>
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
-            <Route exact path="/itemdetail/:idItem" element={<ItemDetails/>} />
+            <Route exact path="/itemdetail/:id" element={<ItemDetails/>} />
             <Route path="*" element={<Error/>} />
           </Routes>
         </div>  

@@ -5,9 +5,6 @@ import './Item.css'
 
 
 const Item = ({ info }) => {
-    
-console.log(`Informacion Productos:`,info);
-
     return (
         <div className="container__item">
             <img src={info.picture} alt="" className="item_img"/>
@@ -19,7 +16,7 @@ console.log(`Informacion Productos:`,info);
             </div>
             <div className="container__item--button">
                 <button className='item--buttonDetails'>
-                    <Link to={`/itemdetail/${info.id}`} info={info}>Detalles</Link>
+                    <Link to={`/itemdetail/${info.id}`}>Detalles</Link>
                 </button>
             </div>
         </div>

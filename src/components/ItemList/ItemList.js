@@ -13,8 +13,6 @@ const ItemList = () => {
         }, 1500)
     }, []);
 
-    console.log(element)
-
     return (
         <div className="container__ItemList">
             {
