@@ -23,9 +23,9 @@
 }
 
 p.nameInfo{
-    align-self: flex-start;
+    align-self: center;
     background-color: #ffffff;
-    border-radius: 16px;
+    border-radius: 3px;
     box-shadow: 5px 5px 25px #d5d5d5,-5px -5px 25px #ebebeb;
     display: flex;
     font-size: 10px;

@@ -4,7 +4,6 @@ import './ItemListContainer.css';
 const ItemListcontainer = () => {
     return (
         <div className="ItemListContainer">
-            <h1 className="mainTitle">Premiere</h1>
             <ItemList />
         </div>
     )

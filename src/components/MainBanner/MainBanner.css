@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container__mainContent{
+    display:flex;
+    flex-direction:column;
+    height:fit-content;
+}
+.main__ContentBanner{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+.mainTitle{
+    height:100px;
+}
+.container__mainBanner{
+    height:100%;
+    overflow:hidden;
+    object-fit: fill;
+    width:100%;
+}
+.container__mainBanner img{
+    position:bottom;
+    width:100%;
+}
+.mainTitle{
+    align-self:center;
+    color:white;
+    display:flex;
+    font-size:250px;
+    font-family: 'Oswald', sans-serif;
+    justify-content: center;
+    margin:0 auto;
+    position: absolute;
+    
+}
