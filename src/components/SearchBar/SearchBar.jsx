@@ -1,19 +1,30 @@
 import React from 'react';
-import List from '../../services/list.json';
-
+import { useState } from 'react/cjs/react.development';
+import Data  from '../../services/list.json';
+import './SearchBar.css';
 const SearchBar = () => {
+    const [search, setSearch] = useState('');
+
     return (
         <div className='selectCategory'>
-            <select name="select" id="">
-                <option value=" " selected>-Opciones-</option>
-                <option value="Action" >Action </option>
-                <option value="Adventure" >Adventure </option>
-                <option value="Drama" >Drama </option>
-                <option value="Family" >Family </option>
-                <option value="Horror" >Horror </option>
-                <option value="Musical" >Musical </option>
-                <option value="Suspense" >Suspense </option>
-            </select>
+            <input type="text" placeholder='Opciones' className='inputCategory' 
+                onChange={e => {setSearch(e.target.value)}}/>
+                {
+                    Data.filter((val) => {
+                        if(search == ""){
+                            return val
+                        }else if(val.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                            return val;
+                        }
+                    }).map((val, key) => {
+                        return ( 
+                        
+                        <div className='container__category' key={key}>
+                                    <p className='nameInfo'>{val.name}</p>
+                                </div>
+                        )
+                    })
+                }
         </div>
     )
 }
