@@ -7,8 +7,10 @@
 .selectCategory{
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 35px 0 10px 0px;
     width: 100%
 }
 
@@ -19,7 +21,7 @@
     height: 50px;
     margin-top: 5px;
     padding-left: 15px;
-    width: 330px;
+    width: 100%;
 }
 
 p.nameInfo{
@@ -31,5 +33,8 @@ p.nameInfo{
     font-size: 10px;
     margin: 8px;
     padding: 10px;
+}
 
+.container__search{
+    display: flex;
 }
