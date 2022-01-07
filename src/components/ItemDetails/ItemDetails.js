@@ -1,5 +1,5 @@
-import React, { useEffect, useStates } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import carritoIcon from '../../assets/carrito.png'
 import List from '../../services/list.json';
@@ -36,11 +36,11 @@ const ItemDetails = () => {
         };
     };
 
-    const buyPro = () => {
-        let pro;
-        click > 1 ? pro = 'boletos' : pro = 'boleto';
-        alert(`## ${click} ${pro} en el carrito`)
-    }
+    // const buyPro = () => {
+    //     let pro;
+    //     click > 1 ? pro = 'boletos' : pro = 'boleto';
+    //     alert(`## ${click} ${pro} en el carrito`)
+    // }
 
     return(
         <div className='container__itemDetails'>
@@ -77,13 +77,16 @@ const ItemDetails = () => {
                         </div>
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <button className='buyTicket' onClick={buyPro}>
+                                <Link to={`/ShoppingCar`} className='carItem--Link'>
+                                <button className='buyTicket'>
                                     <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>
+                                </Link>
+
                             </div>
                             :
                             <div className='mainItemDetails--buy'>
-                                <button className='buyTicket' disabled onClick={buyPro}>
+                                <button className='buyTicket--disable' disabled>
                                     <img src={carritoIcon} alt="Boton de comprar"  className='itemDetails--buyButton'/>
                                 </button>
                             </div>

@@ -21,7 +21,7 @@ const SearchBar = () => {
                         }
                     }).map((val, key) => {
                         return ( 
-                            <div className='container__search'>
+                            <div className='container__search' key={key}>
                                 <div className="container__item">
                                     <img src={val.picture} alt="" className="item_img"/>
                                     <div className="container__item--Title">

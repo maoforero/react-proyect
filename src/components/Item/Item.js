@@ -1,12 +1,9 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ScoreProduct from '../ScoreProduct/ScoreProduct';
 import './Item.css'
 
 
 const Item = ({ info }) => {
-    const { option } = useParams();
-
-
     return (
         <div className="container__item">
             <img src={info.picture} alt="" className="item_img"/>

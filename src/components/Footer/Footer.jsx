@@ -12,7 +12,7 @@ const Footer = () => {
                         <p>React proyect for CoderHouse. Simulation of an event ticket sales page </p>
                     </div>
                 </div>
-                <div class="cointer__footer__team">
+                <div className="cointer__footer__team">
                     <h6>Autor</h6>
                     <a href="#" className="footer__team--profile">Forero Mauro</a>
                 </div>

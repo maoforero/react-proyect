@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 import './ItemList.css';
 import Data from '../../list.json'
-import { Link } from 'react-router-dom';
 
 const ItemList = () => {
     const[element, setElement] = useState([]);
