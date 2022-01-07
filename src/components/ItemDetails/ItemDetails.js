@@ -7,7 +7,18 @@ import List from '../../services/list.json';
 const ItemDetails = () => {
     let { id } = useParams();
     let idInt = parseInt(id)
-    
+    let newItem = [];
+
+    console.log(idInt);
+
+    const filerList = List.map(function(show){
+        if(idInt === show.id){
+            newItem.push(show);
+        }
+    })
+
+    console.log(newItem);
+
     let count = 0;
     const [click, setClick] = useState(count);
 
@@ -35,7 +46,48 @@ const ItemDetails = () => {
 
     return(
         <div>
-
+            <h1>Detalles</h1>
+            {newItem.map((show) => {
+                return(
+                    <div className='container__mainItemDetails'>
+                    <h3>{show.name}</h3>
+                    <div className='container__mainItemDetails--img'>
+                        <img src={show.picture} alt="Poster oficial" />
+                    </div>
+                    <div className='container__mainItemDetails-info'>
+                        <div className='mainItemDetails--description'>
+                            <p className='description'>Idioma: {show.language}</p>
+                            <p className='description'>Genero: {show.gender}</p>
+                            <p className='description'>Puntuación: {show.score}</p>
+                            <p className='description'>Duración: {show.time} minutos</p>
+                        </div>
+                    <div className='mainItemDetails--selection'>
+                        <h6>Boletos</h6>
+                        <div className='mainItemDetails--AddAndRm'>
+                            <button className='addTicket' onClick={addPro} >+</button>
+                            <button className='removeTicket' onClick={rmPro} >-</button>
+                        </div>
+                        <div className="container__info--count">
+                            <span className="info--count">{click}</span>
+                        </div>
+                    </div>
+                        {click > 0 ?
+                            <div className='mainItemDetails--buy'>
+                                <button className='buyTicket'>
+                                    <img src={carritoIcon} alt="Boton de comprar" />
+                                </button>
+                            </div>
+                            :
+                            <div className='mainItemDetails--buy'>
+                                <button className='buyTicket' disabled>
+                                    <img src={carritoIcon} alt="Boton de comprar" onClick={buyPro}/>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+                )
+            })}
         </div>
     )
 }

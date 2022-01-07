@@ -1,7 +1,7 @@
 // Contenedor de ItemDetail
 
 import React, { useEffect, useState } from 'react';
-import ItemDetails from '../ItemDetail/ItemDetails';
+
 import product from '../../list.json';
 
 const ItemDetailContainer = () => {

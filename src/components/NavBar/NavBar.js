@@ -1,7 +1,7 @@
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import home_icon from '../../assets/cine_icon.png';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = ({title}) => {
     return (
@@ -15,7 +15,7 @@ const NavBar = ({title}) => {
                     <ul className="NavBar__Menu--ul">
                         <NavLink className="NavBar--item" to="/" activeClassName="active">Inicio</NavLink>
                         <NavLink className="NavBar--item" to="/movies" activeClassName="active">Peliculas</NavLink>
-                        <NavLink className="NavBar--item" to="/series" activeClassName="active">Series</NavLink>  
+                        <NavLink className="NavBar--item" to="/teatro" activeClassName="active">Teatro</NavLink>  
                         <NavLink className="NavBar--item" to="/about" activeClassName="active">Información</NavLink> 
                         <NavLink className="NavBar--item" to="contact" activeClassName="active">Contacto</NavLink> 
                         <CartWidget/>

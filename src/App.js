@@ -10,11 +10,11 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Home from './views/Home/Home';
 import Movies from './views/Movies/Movies';
-import Series from "./views/Series/Series";
 import Contact from './views/Contact/Contact';
 import About from './views/About/About';
 import Error from './views/Error/Error';
-import ItemDetails from "./components/ItemDetail/ItemDetails";
+import ItemDetail from "./components/ItemDetails/ItemDetails";
+import Theater from "./views/Theater/Theater";
 
 
 class App extends React.Component {
@@ -27,10 +27,10 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/movies" element={<Movies/>}/>
-            <Route path="/series" element={<Series/>}/>
+            <Route path="/teatro" element={<Theater/>}/>
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
-            <Route exact path="/itemdetail/:id" element={<ItemDetails/>} />
+            <Route exact path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />
           </Routes>
         </div>  

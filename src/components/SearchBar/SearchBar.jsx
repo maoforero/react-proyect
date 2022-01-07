@@ -10,7 +10,7 @@ const SearchBar = () => {
 
     return (
         <div className='selectCategory'>
-            <input type="text" placeholder='Opciones' className='inputCategory' 
+            <input type="text" placeholder='Buscar' className='inputCategory' 
                 onChange={e => {setSearch(e.target.value)}}/>
                 {
                     Data.filter((val) => {
