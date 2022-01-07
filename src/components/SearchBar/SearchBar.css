@@ -39,3 +39,9 @@ p.nameInfo{
 .container__search{
     display: flex;
 }
+
+.link__ItemDetails{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}

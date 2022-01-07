@@ -8,7 +8,7 @@ const ItemList = () => {
 
     useEffect(() => {
         setTimeout(() => {
-                setElement(Data)
+                setElement(element)
         }, 1500)
     }, []);
 

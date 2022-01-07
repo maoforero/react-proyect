@@ -11,11 +11,14 @@ const ItemDetails = () => {
     let idInt = parseInt(id)
     let newItem = [];
 
+
     const filerList = List.map(function(show){
         if(idInt === show.id){
             newItem.push(show);
         }
     })
+
+    const [carItems, setCartItems] = useState([]);
 
     let count = 0;
     const [click, setClick] = useState(count);
@@ -36,15 +39,12 @@ const ItemDetails = () => {
         };
     };
 
-    // const buyPro = () => {
-    //     let pro;
-    //     click > 1 ? pro = 'boletos' : pro = 'boleto';
-    //     alert(`## ${click} ${pro} en el carrito`)
-    // }
 
     return(
         <div className='container__itemDetails'>
             {newItem.map((show) => {
+                console.log(show)
+                console.log(click)
                 return(
                 <div className='container__mainItemDetails'>
                     <div className='container__mainItemDetails--img'>
@@ -75,9 +75,19 @@ const ItemDetails = () => {
                             </div>
 
                         </div>
+
+                        <div className='mainItemDetails--buy'>
+                                <Link to={`/ShoppingCar`} className='carItem--Link' product={show} count={click}>
+                                <button className='buyTicket'>
+                                    <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
+                                </button>
+                                </Link>
+
+                            </div>
+
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <Link to={`/ShoppingCar`} className='carItem--Link'>
+                                <Link to={`/ShoppingCar`} className='carItem--Link' product={idInt} count={click}>
                                 <button className='buyTicket'>
                                     <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>

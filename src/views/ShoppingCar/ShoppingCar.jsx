@@ -1,10 +1,10 @@
 import React from 'react'
 import CarItem from '../../components/CarItem/CarItem'
 
-const ShoppingCar = () => {
+const ShoppingCar = ({show, click}) => {
     return (
         <div>
-            <CarItem/>
+            <CarItem className='carItem--Link' product={show} count={click}/>
         </div>
     )
 }

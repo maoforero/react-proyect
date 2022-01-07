@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import Data  from '../../services/list.json';
-import ScoreProduct from '../ScoreProduct/ScoreProduct';
 import './SearchBar.css';
 import { Link } from 'react-router-dom';
 
@@ -27,12 +26,9 @@ const SearchBar = () => {
                                     <div className="container__item--Title">
                                         <span className="item--title">{val.name}</span>
                                     </div>
-                                    <div className='container__scoreProduct'>
-                                        <ScoreProduct value={val.score}/>
-                                    </div>
                                     <div className="container__item--button">
                                         <button className='item--buttonDetails'>
-                                        <Link to={`/itemdetail/${val.id}`}>Detalles</Link>
+                                            <Link to={`/itemdetail/${val.id}`} className='link__ItemDetails'>Detalles</Link>
                                         </button>
                                     </div>
                                 </div>

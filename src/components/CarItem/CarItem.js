@@ -1,12 +1,16 @@
-import React, { Fragment } from 'react'
 
-const CarItem = () => {
+const CarItem = ({ product,click }) => {
+    console.log(product)
+    console.log(click)
     return (
-        <Fragment>
+        <div>
             <div>
                 <h1>Carrito de compras</h1>
+                <h3>TICKETS</h3>
+                <h3>Carrito</h3>
+                <div></div>
             </div>
-        </Fragment>
+        </div>
     )
 }
 
