@@ -4,20 +4,18 @@ import { useState } from 'react/cjs/react.development';
 import carritoIcon from '../../assets/carrito.png'
 import List from '../../services/list.json';
 
+import './ItemDetails.css'
+
 const ItemDetails = () => {
     let { id } = useParams();
     let idInt = parseInt(id)
     let newItem = [];
-
-    console.log(idInt);
 
     const filerList = List.map(function(show){
         if(idInt === show.id){
             newItem.push(show);
         }
     })
-
-    console.log(newItem);
 
     let count = 0;
     const [click, setClick] = useState(count);
@@ -31,7 +29,7 @@ const ItemDetails = () => {
     };
 
     const rmPro = () => {
-        if(click < 0){
+        if(click < 1){
             alert(`Valor no permitido`);
         }else{
             setClick(click - 1);
@@ -41,46 +39,52 @@ const ItemDetails = () => {
     const buyPro = () => {
         let pro;
         click > 1 ? pro = 'boletos' : pro = 'boleto';
-        alert(`## ${click} ${pro} en el carrito de`)
+        alert(`## ${click} ${pro} en el carrito`)
     }
 
     return(
-        <div>
-            <h1>Detalles</h1>
+        <div className='container__itemDetails'>
             {newItem.map((show) => {
                 return(
-                    <div className='container__mainItemDetails'>
-                    <h3>{show.name}</h3>
+                <div className='container__mainItemDetails'>
                     <div className='container__mainItemDetails--img'>
-                        <img src={show.picture} alt="Poster oficial" />
+                        <img src={show.picture} alt="Poster oficial" className='mainItemDetails--img'/>
                     </div>
+                    <div className='container__mainItem--title'>
+                        <h3 className='mainItem--title'>{show.name}</h3>
+                    </div>
+                    
                     <div className='container__mainItemDetails-info'>
                         <div className='mainItemDetails--description'>
-                            <p className='description'>Idioma: {show.language}</p>
-                            <p className='description'>Genero: {show.gender}</p>
-                            <p className='description'>Puntuación: {show.score}</p>
-                            <p className='description'>Duración: {show.time} minutos</p>
+                            <p className='description'><strong>Idioma:</strong> <span>{show.language}</span></p>
+                            <p className='description'><strong>Genero:</strong> <span>{show.gender}</span></p>
+                            <p className='description'><strong>Puntuación:</strong> <span> {show.score}</span></p>
+                            <p className='description'><strong>Duración:</strong> <span> {show.time} minutos</span></p>
                         </div>
-                    <div className='mainItemDetails--selection'>
-                        <h6>Boletos</h6>
-                        <div className='mainItemDetails--AddAndRm'>
-                            <button className='addTicket' onClick={addPro} >+</button>
-                            <button className='removeTicket' onClick={rmPro} >-</button>
+                        <div className='mainItemDetails--selection'>
+                            
+                            <div className='mainItemDetails--AddAndRm'>
+                                <button className='removeTicket' onClick={rmPro} >Eliminar Boleto</button>
+                                <button className='addTicket' onClick={addPro} >Agregar Boleto</button>
+                            </div>
+                            <div className='itemDetails--ticketsTitle'>
+                                <h6>Boletos:</h6>
+                                <div className="container__info--count">
+                                    <span className="info--count">{click}</span>
+                                </div>
+                            </div>
+
                         </div>
-                        <div className="container__info--count">
-                            <span className="info--count">{click}</span>
-                        </div>
-                    </div>
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <button className='buyTicket'>
-                                    <img src={carritoIcon} alt="Boton de comprar" />
+                                <button className='buyTicket' onClick={buyPro}>
+                                    <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>
                             </div>
                             :
                             <div className='mainItemDetails--buy'>
-                                <button className='buyTicket' disabled>
-                                    <img src={carritoIcon} alt="Boton de comprar" onClick={buyPro}/>
+                                <button className='buyTicket' disabled onClick={buyPro}>
+                                    <img src={carritoIcon} alt="Boton de comprar"  className='itemDetails--buyButton'/>
                                 </button>
                             </div>
                         }
@@ -94,40 +98,3 @@ const ItemDetails = () => {
 
 
 export default ItemDetails;
-
-// <div className='container__mainItemDetails'>
-// <h1>Elementos</h1>
-//     <div className='container__mainItemDetails--img'>
-//         <img src="#" alt="Poster oficial" />
-//     </div>
-// <div className='container__mainItemDetails-info'>
-//     <div className='mainItemDetails--description'>
-//         <h4 className='description'>Lorem</h4>
-//         <p className='description'>Lorem</p>
-//         <p className='description'>Lorem</p>
-//     </div>
-//     <div className='mainItemDetails--selection'>
-//         <div className='mainItemDetails--AddAndRm'>
-//             <button className='addTicket' onClick={addPro} >+</button>
-//             <button className='removeTicket' onClick={rmPro} >-</button>
-//         </div>
-//         <div className="container__info--count">
-//                 <span className="info--count">{click}</span>
-//         </div>
-//     </div>
-//     {
-//         click > 0 ?
-//     <div className='mainItemDetails--buy'>
-//         <button className='buyTicket'>
-//             <img src={carritoIcon} alt="Boton de comprar" />
-//         </button>
-//     </div>
-//     :
-//     <div className='mainItemDetails--buy'>
-//         <button className='buyTicket' disabled>
-//             <img src={carritoIcon} alt="Boton de comprar" onClick={buyPro}/>
-//         </button>
-//     </div>
-//     }
-// </div>
-// </div>

@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+.container__itemDetails{
+    align-items: center;
+    background-color: #eeedee;
+    display: flex;
+    justify-content: center;
+}
+
+
+/**Tarjeta del Item **/
+.container__mainItemDetails{
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin: 65px 0 65px 0;
+}
+
+.mainItemDetails--img{
+    border-radius: 12px 12px 0 0;
+    height: 533px;
+    width: auto;
+}
+
+.container__mainItem--title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainItem--title{
+    font-size: 25px;
+    margin: 17px 10px 0;
+    text-align: center;
+    width: 70%;
+}
+
+.container__mainItemDetails-info{
+    margin: 5px;
+}
+
+.mainItemDetails--description{
+    margin-left: 25px ;
+}
+
+.description{
+    color: #27ae60;
+    font-size: 16px;
+    padding: 2px 5px;
+}
+
+.description > span {
+    color: rgb(49, 49, 49);
+}
+
+.itemDetails--ticketsTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/**Botones **/
+
+.mainItemDetails--selection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.itemDetails--ticketsTitle > h6 {
+    align-self: center;
+    font-size: 14px;
+    justify-self: center;
+}
+
+.mainItemDetails--AddAndRm{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0 ;
+    justify-content: center;
+}
+
+.addTicket, .removeTicket {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 33px;
+    margin-left: 10px;
+    width: 110px;
+}
+
+
+.addTicket{
+    background-color:#27ae60 ;
+}
+
+.addTicket:hover{
+    color: white;
+}
+
+.addTicket:active{
+    background-color:#cfc203 ;
+}
+
+.removeTicket:hover{
+    color: #da5c08;
+}
+
+.removeTicket:active{
+    background-color:#da5c08 ;
+    color: white;
+}
+
+.mainItemDetails--buy{
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px ;
+    width: 80%;
+}
+
+.mainItemDetails--buy > button{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.itemDetails--buyButton{
+    margin: 9px 0 ;
+    width: 25px;
+}
