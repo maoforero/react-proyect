@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
+import { addItem } from '../../views/ShoppingCar/ShoppingCar'
 import carritoIcon from '../../assets/carrito.png'
 import List from '../../services/list.json';
 
@@ -78,7 +79,7 @@ const ItemDetails = () => {
 
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <Link to={`/ShoppingCar`} className='carItem--Link' product={show} count={click}>
+                                <Link  className='carItem--Link' to={'/ShoppingCar'}>
                                 <button className='buyTicket'>
                                     <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>

@@ -1,15 +1,17 @@
+import React from 'react'
 
-const CarItem = ({ product,click }) => {
-    console.log(product)
-    console.log(click)
+const CarItem = (props) => {
+
+const {cartItem} = props;
+
     return (
         <div>
-            <div>
-                <h1>Carrito de compras</h1>
-                <h3>TICKETS</h3>
-                <h3>Carrito</h3>
-                <div></div>
-            </div>
+            <h1>Carrito de compras</h1>
+            { <div>
+                {cartItem.length === 0 && 
+                <div>Cart is empty </div>}
+            </div>}
+            
         </div>
     )
 }
