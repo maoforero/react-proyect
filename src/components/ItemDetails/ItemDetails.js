@@ -77,7 +77,7 @@ const ItemDetails = () => {
                         </div>
 
                         <div className='mainItemDetails--buy'>
-                                <Link to={`/ShoppingCar`} className='carItem--Link' product={show} count={click}>
+                                <Link to={`/ShoppingCar`}>
                                 <button className='buyTicket'>
                                     <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>
@@ -87,7 +87,7 @@ const ItemDetails = () => {
 
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <Link to={`/ShoppingCar`} className='carItem--Link' product={idInt} count={click}>
+                                <Link to={`/ShoppingCar`} className='carItem--Link' product={show} count={click}>
                                 <button className='buyTicket'>
                                     <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                 </button>

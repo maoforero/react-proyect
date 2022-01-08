@@ -6,8 +6,7 @@ import './Item.css'
 const Item = ({ info }) => {
 
     let option = useParams();
-
-
+    
     return (
         <div className="container__item">
             <img src={info.picture} alt="" className="item_img"/>

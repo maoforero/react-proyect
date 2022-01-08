@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
-import ItemListcontainer from '../../components/ItemListContainer/ItemListcontainer';
 import '../../components/SearchBar/SearchBar.css'
 import { Link } from 'react-router-dom'
 import Data from '../../list.json';
