@@ -27,9 +27,9 @@ class App extends React.Component {
         <NavBar title="TicketMaster"/>
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/movies" element={<Movies/>}/>
-            <Route path="/teatro" element={<Theater/>}/>
-            <Route path="/about" element={<About/>} />
+            <Route path="/movies" element={<Movies info={"movie"}/>}/>
+            <Route path="/teatro" element={<Theater info={"theater"}/>}/>
+            <Route path="/about" element={<About/>}  />
             <Route path="/contact" element={<Contact/>} />
             <Route exact path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />

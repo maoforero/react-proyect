@@ -4,6 +4,28 @@
     padding: 0;
 }
 
+.container__movies{
+    display: flex;
+    flex-direction: column;
+}
+
+.container--moviesTitle{
+    align-items: center;
+    background-image: url('../../assets/movies-background.jpg');
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    background-position:center;
+    width: auto;
+}
+
+.moviesTitle{
+    color: white;
+    height: fit-content;
+    font-size: 250px;
+    width: fit-content;
+}
+
 .selectCategory{
     align-items: flex-start;
     display: flex;
