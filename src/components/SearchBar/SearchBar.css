@@ -40,9 +40,9 @@
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 35px 0 10px 65px;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 35px auto;
     min-height: 300px;
     width: 100%
 }

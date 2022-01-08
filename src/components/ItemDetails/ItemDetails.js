@@ -76,15 +76,6 @@ const ItemDetails = () => {
 
                         </div>
 
-                        <div className='mainItemDetails--buy'>
-                                <Link to={`/ShoppingCar`}>
-                                <button className='buyTicket'>
-                                    <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
-                                </button>
-                                </Link>
-
-                            </div>
-
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
                                 <Link to={`/ShoppingCar`} className='carItem--Link' product={show} count={click}>

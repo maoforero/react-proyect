@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import Data from '../../list.json';
+import '../../components/Item/Item.css';
 import '../../components/SearchBar/SearchBar';
 
 const Theater = ({info}) => {

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import Data  from '../../services/list.json';
-import './SearchBar.css';
+import '../SearchBar/SearchBar.css'
+import '../Item/Item.css'
 import { Link } from 'react-router-dom';
 
 const SearchBar = () => {

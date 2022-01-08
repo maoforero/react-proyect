@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
-import '../../components/SearchBar/SearchBar.css'
+import '../../components/SearchBar/SearchBar.css';
+import '../../components/Item/Item.css';
 import { Link } from 'react-router-dom'
 import Data from '../../list.json';
 
@@ -9,7 +10,7 @@ const Movies = (props) => {
     return (
         <div className='container__category'>
             <div className='container--categoryTitle'>
-                <h1 className='moviesTitle'>Movies</h1>
+                <h1 className='moviesTitle'>Peliculas</h1>
             </div>
             <div className='selectCategory'>
                 {Data.filter((movie) => {
