@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react/cjs/react.development';
 import CarItem from '../../components/CarItem/CarItem'
+import Footer from '../../components/Footer/Footer'
 
 const ShoppingCar = () => {
 
@@ -22,6 +23,7 @@ const ShoppingCar = () => {
     return (
         <div>
             <CarItem className='carItem--Link' cartItem={cartItem} addItem={addItem}/>
+            <Footer/>
         </div> 
     )
 }

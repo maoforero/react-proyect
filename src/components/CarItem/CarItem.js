@@ -1,17 +1,35 @@
-import React from 'react'
+import React from 'react';
+import './CarItem.css';
 
 const CarItem = (props) => {
 
-const {cartItem} = props;
+const {cartItem, addItem} = props;
 
     return (
-        <div>
-            <h1>Carrito de compras</h1>
-            { <div>
-                {cartItem.length === 0 && 
-                <div>Cart is empty </div>}
-            </div>}
-            
+        <div className='container__mainCart'>
+            <div className='container__cartItem'>
+                <h1 className='cartItem__mainTitle'>Carrito de compras</h1>
+                { <div className='container__cartItem--products'>
+                    {cartItem.length === 0 && 
+                    <div className='products--title'>Cart is empty </div>}
+                </div>}
+                {
+                    cartItem.map((item) => {
+                        <div key={item.id} className='container__cartItem--products'>
+                            <div className='products--title'>
+                                {item.name}
+                            </div>
+                            <div className='product--buttons'>
+                                <button onClick={() => addItem(item)} className='carItem--addButton'>+</button>
+                                <button onClick={() => addItem(item)} className='carItem--remButton'>-</button>
+                            </div>
+                            <div className='products--cuantity'>
+                                {item.qty} x ${item.price.toFixed(2)}
+                            </div>
+                        </div>
+                    })
+                }
+            </div>
         </div>
     )
 }
