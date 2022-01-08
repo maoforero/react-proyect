@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import { addItem } from '../../views/ShoppingCar/ShoppingCar'
 import carritoIcon from '../../assets/carrito.png'
+import Footer from '../Footer/Footer'
 import List from '../../services/list.json';
 
 import './ItemDetails.css'
@@ -42,6 +43,7 @@ const ItemDetails = () => {
 
 
     return(
+        <>
         <div className='container__itemDetails'>
             {newItem.map((show) => {
                 console.log(show)
@@ -98,6 +100,8 @@ const ItemDetails = () => {
                 )
             })}
         </div>
+        <Footer/>
+        </>
     )
 }
 

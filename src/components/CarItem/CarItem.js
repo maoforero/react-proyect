@@ -11,7 +11,7 @@ const {cartItem, addItem} = props;
                 <h1 className='cartItem__mainTitle'>Carrito de compras</h1>
                 { <div className='container__cartItem--products'>
                     {cartItem.length === 0 && 
-                    <div className='products--title'>Cart is empty </div>}
+                    <div className='products--title'>El carrito esta vacio </div>}
                 </div>}
                 {
                     cartItem.map((item) => {
