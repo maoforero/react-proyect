@@ -8,9 +8,9 @@ import Data from '../../list.json';
 const Movies = (props) => {
 
     return (
-        <div className='container__movies'>
-            <div className='container--moviesTitle'>
-            <h1 className='moviesTitle'>Movies</h1>
+        <div className='container__category'>
+            <div className='container--categoryTitle'>
+                <h1 className='moviesTitle'>Movies</h1>
             </div>
             <div className='selectCategory'>
                 {Data.filter((movie) => {
