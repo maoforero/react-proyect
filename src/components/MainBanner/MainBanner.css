@@ -10,13 +10,12 @@
     height:fit-content;
 }
 .main__ContentBanner{
-    height:auto ;
     display:flex;
     flex-direction: column;
 }
 
 .container__mainBanner{
-    height:70vh;
+    height:70%;
     overflow:hidden;
     width:100%;
 }
