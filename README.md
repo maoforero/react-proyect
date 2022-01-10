@@ -12,6 +12,6 @@ npm install
 Al momento de correr la App se puede encontrar la página de inicio que posee un filtro de busqueda que trabaja sobre listado los nombres que coinciden con ls busqueda realizada por el usuario.
 
 
-### Auto
+### Autor
 
 *Mauro Forero* [Perfil Github](https://github.com/maoforero)
