@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/42775364/148733914-37d56369-3b63-46cd-
 ### Estructura del proyecto
 
 *Home*
-<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 58" src="https://user-images.githubusercontent.com/42775364/148731612-bdbc7768-12ec-428b-a2ef-6766cce6d8d2.png">
+<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 16" src="https://user-images.githubusercontent.com/42775364/148731810-1bc0f2fe-f9db-4405-b710-101ceaac57b5.png">
 
 *Filtro de busqueda*
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 31 31" src="https://user-images.githubusercontent.com/42775364/148731749-037b9554-439f-4e2a-843b-c818f29f359a.png">
@@ -40,7 +40,9 @@ https://user-images.githubusercontent.com/42775364/148733914-37d56369-3b63-46cd-
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 32 16" src="https://user-images.githubusercontent.com/42775364/148731598-d95ddcb6-5758-4562-ba87-24a66d874454.png">
 
 *Teatro*
-<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 16" src="https://user-images.githubusercontent.com/42775364/148731810-1bc0f2fe-f9db-4405-b710-101ceaac57b5.png">
+
+<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 58" src="https://user-images.githubusercontent.com/42775364/148731612-bdbc7768-12ec-428b-a2ef-6766cce6d8d2.png">
+
 
 *Carrito de compras*
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 32 21" src="https://user-images.githubusercontent.com/42775364/148731593-bcf9b906-dc24-4fc2-8a78-e90c56f309fd.png">
