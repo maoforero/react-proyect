@@ -30,7 +30,7 @@ https://user-images.githubusercontent.com/42775364/148733914-37d56369-3b63-46cd-
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 31 58" src="https://user-images.githubusercontent.com/42775364/148731612-bdbc7768-12ec-428b-a2ef-6766cce6d8d2.png">
 
 *Filtro de busqueda*
-**<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 31" src="https://user-images.githubusercontent.com/42775364/148731749-037b9554-439f-4e2a-843b-c818f29f359a.png">
+<img width="1407" alt="Screen Shot 2022-01-10 at 2 31 31" src="https://user-images.githubusercontent.com/42775364/148731749-037b9554-439f-4e2a-843b-c818f29f359a.png">
 
 *Peliculas*
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 31 47" src="https://user-images.githubusercontent.com/42775364/148731678-dee7e9ca-0272-4683-b5f7-c6e21d8d6ae7.png">
