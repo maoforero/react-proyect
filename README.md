@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/42775364/148733914-37d56369-3b63-46cd-
 
 ### Estructura del proyecto
 
-####Home
+#### Home
 
 <img width="1407" alt="Screen Shot 2022-01-10 at 2 31 16" src="https://user-images.githubusercontent.com/42775364/148731810-1bc0f2fe-f9db-4405-b710-101ceaac57b5.png">
 
