@@ -16,6 +16,7 @@ import Error from './views/Error/Error';
 import ItemDetail from "./components/ItemDetails/ItemDetails";
 import Theater from "./views/Theater/Theater";
 import ShoppingCar from "./views/ShoppingCar/ShoppingCar";
+import CarItem from "./components/CarItem/CarItem";
 
 
 class App extends React.Component {
@@ -33,7 +34,7 @@ class App extends React.Component {
             <Route path="/contact" element={<Contact/>} />
             <Route exact path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />
-            <Route path='/shoppingcar' element={<ShoppingCar/>}/>
+            <Route path='/shoppingcar' element={<CarItem/>}/>
           </Routes>
         </div>  
       </Router>

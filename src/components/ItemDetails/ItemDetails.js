@@ -46,8 +46,7 @@ const ItemDetails = () => {
         <>
         <div className='container__itemDetails'>
             {newItem.map((show) => {
-                console.log(show)
-                console.log(click)
+
                 return(
                 <div className='container__mainItemDetails'>
                     <div className='container__mainItemDetails--img'>
@@ -65,7 +64,6 @@ const ItemDetails = () => {
                             <p className='description'><strong>Duración:</strong> <span> {show.time} minutos</span></p>
                         </div>
                         <div className='mainItemDetails--selection'>
-                            
                             <div className='mainItemDetails--AddAndRm'>
                                 <button className='removeTicket' onClick={rmPro} >Eliminar Boleto</button>
                                 <button className='addTicket' onClick={addPro} >Agregar Boleto</button>
@@ -81,10 +79,13 @@ const ItemDetails = () => {
 
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
-                                <Link  className='carItem--Link' to={'/ShoppingCar'}>
-                                <button className='buyTicket'>
-                                    <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
-                                </button>
+                                <Link  className='carItem--Link' 
+                                to={{pathname:'/shoppingcar',
+                                state:{prueba:"prueba"}
+                            }}>
+                                    <button className='buyTicket'>
+                                        <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
+                                    </button>
                                 </Link>
 
                             </div>

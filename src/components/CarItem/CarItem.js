@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './CarItem.css';
 
-const CarItem = (props) => {
+const CarItem = () => {
 
-const {cartItem, addItem} = props;
+const location = useLocation();
+const prueba = location.state
+
+console.log(prueba)
+
+const [cartItem, setCartItem] = useState([]);
+
 
     return (
         <div className='container__mainCart'>
@@ -11,7 +18,7 @@ const {cartItem, addItem} = props;
                 <h1 className='cartItem__mainTitle'>Carrito de compras</h1>
                 { <div className='container__cartItem--products'>
                     {cartItem.length === 0 && 
-                    <div className='products--title'>El carrito esta vacio </div>}
+                    <div className='products--title'>No existen productos seleccionados</div>}
                 </div>}
                 {
                     cartItem.map((item) => {
@@ -20,8 +27,8 @@ const {cartItem, addItem} = props;
                                 {item.name}
                             </div>
                             <div className='product--buttons'>
-                                <button onClick={() => addItem(item)} className='carItem--addButton'>+</button>
-                                <button onClick={() => addItem(item)} className='carItem--remButton'>-</button>
+                                <button onClick={() => setCartItem(item)} className='carItem--addButton'>+</button>
+                                <button onClick={() => setCartItem(item)} className='carItem--remButton'>-</button>
                             </div>
                             <div className='products--cuantity'>
                                 {item.qty} x ${item.price.toFixed(2)}

@@ -15,7 +15,6 @@ const Movies = (props) => {
             <div className='selectCategory'>
                 {Data.filter((movie) => {
                         if(props.info === movie.type){
-                            console.log(movie.name);
                             return movie
                         }else{
                             return 0;

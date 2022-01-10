@@ -6,7 +6,6 @@ import './Item.css'
 
 const Item = ({ info }) => {
 
-    let option = useParams();
     
     return (
         <div className="container__item">
