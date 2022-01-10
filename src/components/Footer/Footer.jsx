@@ -14,14 +14,14 @@ const Footer = () => {
                 </div>
                 <div className="cointer__footer__team">
                     <h6>Autor</h6>
-                    <a href="#" className="footer__team--profile">Forero Mauro</a>
+                    <p className="footer__team--profile">Forero Mauro</p>
                 </div>
                 <div className="cointer__footer__media">
                     <h6>Social Media</h6>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">GitHub</a>
+                    <p href="#">Facebook</p>
+                    <p href="#">Twitter</p>
+                    <p href="#">Instagram</p>
+                    <p href="#">GitHub</p>
                 </div>
             </footer>
         </div>

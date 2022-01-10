@@ -15,7 +15,6 @@ import About from './views/About/About';
 import Error from './views/Error/Error';
 import ItemDetail from "./components/ItemDetails/ItemDetails";
 import Theater from "./views/Theater/Theater";
-import ShoppingCar from "./views/ShoppingCar/ShoppingCar";
 import CarItem from "./components/CarItem/CarItem";
 
 

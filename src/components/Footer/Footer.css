@@ -47,7 +47,7 @@ footer div.cointer__footer__team h6{
     font-size: 25px;
 }
 
-footer div.cointer__footer__team a{
+footer div.cointer__footer__team p{
     color: white;
     font-size: 16px;
     margin-top:3px;
@@ -68,7 +68,7 @@ footer div.cointer__footer__media h6{
     font-size: 25px;
 }
 
-footer div.cointer__footer__media a{
+footer div.cointer__footer__media p{
     color: white;
     font-size: 16px;
     margin-top:3px;

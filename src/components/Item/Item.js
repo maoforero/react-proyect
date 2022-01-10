@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
-import { addItem } from '../../views/ShoppingCar/ShoppingCar'
 import './Item.css'
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
-import { addItem } from '../../views/ShoppingCar/ShoppingCar'
 import carritoIcon from '../../assets/carrito.png'
 import Footer from '../Footer/Footer'
 import List from '../../services/list.json';
@@ -17,10 +16,8 @@ const ItemDetails = () => {
     const filerList = List.map(function(show){
         if(idInt === show.id){
             newItem.push(show);
-        }
+        };
     })
-
-    const [carItems, setCartItems] = useState([]);
 
     let count = 0;
     const [click, setClick] = useState(count);
@@ -81,7 +78,7 @@ const ItemDetails = () => {
                             <div className='mainItemDetails--buy'>
                                 <Link  className='carItem--Link' 
                                 to={{pathname:'/shoppingcar',
-                                state:{prueba:"prueba"}
+                                state:{test:"prueba"}
                             }}>
                                     <button className='buyTicket'>
                                         <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
@@ -100,6 +97,7 @@ const ItemDetails = () => {
                 </div>
                 )
             })}
+            
         </div>
         <Footer/>
         </>
