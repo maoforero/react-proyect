@@ -14,4 +14,4 @@ Al momento de correr la App se puede encontrar la página de inicio que posee un
 
 ### Auto
 
-Mauro Forero
+* Mauro Forero * [Perfil Github](https://github.com/maoforero)
