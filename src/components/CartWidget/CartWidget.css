@@ -16,5 +16,11 @@
 }
 
 .icon__carrito:hover{
-    background-color: rgb(65, 142, 35);
+    background-color: rgb(4, 219, 191);
 }
+
+.activeButton{
+    background-color: rgb(4, 219, 191);
+    border-radius: 100px
+}
+

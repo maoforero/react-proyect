@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container__errorView{
+    display: flex;
+    flex-direction: column;
+    margin: 65px;
+}
+
+.errorView--title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.errorTitle{
+    display: flex;
+    font-size: 50px;
+    margin: 25px 45px;
+}
+
+.errorView--text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.errorText{
+    font-size: 16px;
+}
+
+.errorView--img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.errorImg{
+    height: 550px;
+    padding: 15px;
+}
