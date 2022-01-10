@@ -8,6 +8,13 @@ Para descargar y ejecutar el proyecto solo debe clonar el repositorio e instalar
 npm install
 ```
 
+Luego de tener el repositorio localmente se puede ejecutar con:
+
+```
+npm run start
+```
+
+
 ### Ejecución
 Al momento de correr la App se puede encontrar la página de inicio que posee un filtro de busqueda que trabaja sobre listado los nombres que coinciden con ls busqueda realizada por el usuario.
 
