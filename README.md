@@ -21,7 +21,7 @@ Cada categoria realiza el filtro sobre los elementos que coinciden con su tipo "
 
 Cada item posee un botón que lleva a los detalles del show seleccionado, allí se pueden encontrar el tiempo de duración, genero, nombre y lenguaje. De igual manera es posible seleccionar el los detalles del show la cantidad de boletas, el boton de comprar solo será cliqueable si el número de boletas es mayor a 1.1
 
-https://user-images.githubusercontent.com/42775364/148733914-37d56369-3b63-46cd-806e-5ba284bbeebe.mp4
+![ticketmaster](https://user-images.githubusercontent.com/42775364/148885539-4992bbf5-31ea-480d-b093-db294824a58d.gif)
 
 
 ### Estructura del proyecto
