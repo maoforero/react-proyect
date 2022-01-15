@@ -21,6 +21,7 @@
 }
 .container__mainBanner img{
     background-position:top;
+    height: 70vh;
     width:100%;
 }
 .mainTitle{
