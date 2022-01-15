@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import carritoIcon from '../../assets/carrito.png'
 import Footer from '../Footer/Footer'
-import List from '../../services/list.json';
+import List from '../../list.json';
 
 import './ItemDetails.css'
 
@@ -43,11 +43,8 @@ const ItemDetails = () => {
         <>
         <div className='container__itemDetails'>
             {newItem.map((show) => {
-
-                console.log(show)
-
-                return(
-                <div className='container__mainItemDetails' key={show.id}>
+                return (
+                <div className='container__mainItemDetails'>
                     <div className='container__mainItemDetails--img'>
                         <img src={show.picture} alt="Poster oficial" className='mainItemDetails--img'/>
                     </div>

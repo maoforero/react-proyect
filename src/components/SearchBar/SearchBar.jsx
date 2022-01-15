@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
-import Data  from '../../services/list.json';
+import Data  from '../../list.json';
 import '../SearchBar/SearchBar.css'
 import '../Item/Item.css'
 import { Link } from 'react-router-dom';
@@ -29,7 +29,8 @@ const SearchBar = () => {
                                     </div>
                                     <div className="container__item--button">
                                         <button className='item--buttonDetails'>
-                                            <Link to={`/itemdetail/${val.id}`} className='link__ItemDetails'>Detalles</Link>
+                                            <Link to={`/itemdetail/${val.id}`} 
+                                            className='link__ItemDetails'>Detalles</Link>
                                         </button>
                                     </div>
                                 </div>
