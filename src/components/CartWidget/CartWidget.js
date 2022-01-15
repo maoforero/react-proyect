@@ -7,7 +7,7 @@ import car_icon from '../../assets/car_icon.png';
 const CartWidget = () => {
     return (
         <>
-            <img className="icon__carrito" src={car_icon} activeClassName="activeButton" alt="icono"></img>
+            <img className="icon__carrito" src={car_icon}  alt="icono"></img>
         </>
     )
 }

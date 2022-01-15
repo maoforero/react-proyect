@@ -13,10 +13,10 @@ const NavBar = ({title}) => {
             <div className="container__NavBar__Menu">
                 <nav className="NavBar__Menu" id="navBar_Main">
                     <ul className="NavBar__Menu--ul">
-                        <NavLink className="NavBar--item" to="/" activeClassName="active">Inicio</NavLink>
-                        <NavLink className="NavBar--item" to="/movies" activeClassName="active">Peliculas</NavLink>
-                        <NavLink className="NavBar--item" to="/teatro" activeClassName="active">Teatro</NavLink>  
-                        <NavLink to="/shoppingcar" activeClassName="active"><CartWidget/></NavLink>
+                        <NavLink className="NavBar--item" to="/" >Inicio</NavLink>
+                        <NavLink className="NavBar--item" to="/movies" >Peliculas</NavLink>
+                        <NavLink className="NavBar--item" to="/teatro" >Teatro</NavLink>  
+                        <NavLink to="/shoppingcar" className="active"><CartWidget/></NavLink>
                         
                     </ul>
                 </nav>

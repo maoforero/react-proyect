@@ -18,10 +18,10 @@ const Footer = () => {
                 </div>
                 <div className="cointer__footer__media">
                     <h6>Social Media</h6>
-                    <p href="#">Facebook</p>
-                    <p href="#">Twitter</p>
-                    <p href="#">Instagram</p>
-                    <p href="#">GitHub</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                    <p>GitHub</p>
                 </div>
             </footer>
         </div>

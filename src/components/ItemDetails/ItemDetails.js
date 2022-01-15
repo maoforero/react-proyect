@@ -44,8 +44,10 @@ const ItemDetails = () => {
         <div className='container__itemDetails'>
             {newItem.map((show) => {
 
+                console.log(show)
+
                 return(
-                <div className='container__mainItemDetails'>
+                <div className='container__mainItemDetails' key={show.id}>
                     <div className='container__mainItemDetails--img'>
                         <img src={show.picture} alt="Poster oficial" className='mainItemDetails--img'/>
                     </div>

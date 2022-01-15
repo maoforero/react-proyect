@@ -7,8 +7,6 @@ const CarItem = () => {
 const location = useLocation();
 const prueba = location.state
 
-console.log(prueba)
-
 const [cartItem, setCartItem] = useState([]);
 
 

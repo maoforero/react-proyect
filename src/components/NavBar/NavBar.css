@@ -63,6 +63,6 @@ ul.NavBar__Menu--ul{
     
 }
 
-.NavBar--item{
+.NavBar--item:active{
     color: blueviolet;
 }

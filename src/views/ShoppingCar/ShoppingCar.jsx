@@ -2,7 +2,9 @@ import React from 'react'
 import CarItem from '../../components/CarItem/CarItem'
 import Footer from '../../components/Footer/Footer'
 
-const ShoppingCar = () => {
+const ShoppingCar = (props) => {
+
+    console.log(props)
 
     // const [cartItem, setCartItem] = useState([]);
 
