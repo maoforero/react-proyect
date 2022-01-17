@@ -10,8 +10,6 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Home from './views/Home/Home';
 import Movies from './views/Movies/Movies';
-import Contact from './views/Contact/Contact';
-import About from './views/About/About';
 import Error from './views/Error/Error';
 import ItemDetail from "./components/ItemDetails/ItemDetails";
 import Theater from "./views/Theater/Theater";
@@ -29,13 +27,12 @@ class App extends React.Component {
             <Route path="/" element={<Home/>} />
             <Route path="/movies" element={<Movies info={"movie"}/>}/>
             <Route path="/teatro" element={<Theater info={"theater"}/>}/>
-            <Route path="/about" element={<About/>}  />
-            <Route path="/contact" element={<Contact/>} />
             <Route exact path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />
             <Route path='/shoppingcar' element={<CarItem/>}/>
           </Routes>
-        </div>  
+        </div>
+        <CarItem/>
       </Router>
     );
   };

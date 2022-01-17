@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import carritoIcon from '../../assets/carrito.png'
 import Footer from '../Footer/Footer'
-import List from '../../services/list.json';
+import List from '../../list.json';
 
 import './ItemDetails.css'
 
@@ -32,21 +32,22 @@ const ItemDetails = () => {
 
     const rmPro = () => {
         if(click < 1){
-            alert(`Valor no permitido`);
+            return 0
         }else{
             setClick(click - 1);
         };
     };
 
 
+    // const addProductCart = (item) => {
+    //     const existingProduct = 
+    // }
+
     return(
         <>
         <div className='container__itemDetails'>
             {newItem.map((show) => {
-
-                console.log(show)
-
-                return(
+                return (
                 <div className='container__mainItemDetails' key={show.id}>
                     <div className='container__mainItemDetails--img'>
                         <img src={show.picture} alt="Poster oficial" className='mainItemDetails--img'/>
@@ -72,15 +73,23 @@ const ItemDetails = () => {
                                 <div className="container__info--count">
                                     <span className="info--count">{click}</span>
                                 </div>
-                            </div>
+                            </div> 
 
                         </div>
 
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
                                 <Link  className='carItem--Link' 
+<<<<<<< HEAD
                                 to={{pathname:'/shoppingcar', state:{item:"prueba"}}}>
                                     <button className='buyTicket'>
+=======
+                                    to={{pathname:'/shoppingcar',
+                                    state:{
+                                        prueba:true}
+                            }}>
+                                    <button className='buyTicket' >
+>>>>>>> 7f9a9e8fabdd765f6d1bdab54082a031e8e1dfac
                                         <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                     </button>
                                 </Link>
