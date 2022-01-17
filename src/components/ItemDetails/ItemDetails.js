@@ -32,19 +32,23 @@ const ItemDetails = () => {
 
     const rmPro = () => {
         if(click < 1){
-            alert(`Valor no permitido`);
+            return 0
         }else{
             setClick(click - 1);
         };
     };
 
 
+    // const addProductCart = (item) => {
+    //     const existingProduct = 
+    // }
+
     return(
         <>
         <div className='container__itemDetails'>
             {newItem.map((show) => {
                 return (
-                <div className='container__mainItemDetails'>
+                <div className='container__mainItemDetails' key={show.id}>
                     <div className='container__mainItemDetails--img'>
                         <img src={show.picture} alt="Poster oficial" className='mainItemDetails--img'/>
                     </div>
@@ -69,17 +73,18 @@ const ItemDetails = () => {
                                 <div className="container__info--count">
                                     <span className="info--count">{click}</span>
                                 </div>
-                            </div>
+                            </div> 
 
                         </div>
 
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
                                 <Link  className='carItem--Link' 
-                                to={{pathname:'/shoppingcar',
-                                state:{test:"prueba"}
+                                    to={{pathname:'/shoppingcar',
+                                    state:{
+                                        prueba:true}
                             }}>
-                                    <button className='buyTicket'>
+                                    <button className='buyTicket' >
                                         <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                     </button>
                                 </Link>

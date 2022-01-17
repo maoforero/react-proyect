@@ -4,8 +4,7 @@ import './CarItem.css';
 
 const CarItem = () => {
 
-const location = useLocation();
-const prueba = location.state
+    const { location } = useLocation();
 
 const [cartItem, setCartItem] = useState([]);
 

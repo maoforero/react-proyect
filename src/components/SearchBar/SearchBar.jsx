@@ -16,6 +16,7 @@ const SearchBar = () => {
                     Data.filter((val) => {
                         if(search === ""){
                             return val
+
                         }else if(val.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
                             return val;
                         }
