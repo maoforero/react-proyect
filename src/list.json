@@ -181,11 +181,7 @@
         "gender": "Suspense",
         "time": "280",
         "language": "English",
-<<<<<<< HEAD
         "picture": "https://images-na.ssl-images-amazon.com/images/I/81pFGLZ6puL.jpg",
-=======
-        "picture": "https://images-na.ssl-images-amazon.com/images/I/81hV7BRj8vL.jpg",
->>>>>>> 7f9a9e8fabdd765f6d1bdab54082a031e8e1dfac
         "type":"theater",
         "score":"4"
     },

@@ -6,13 +6,6 @@ import { DataContext } from '../../context/context';
 
 
 const CartWidget = () => {
-    const value =  useContext(DataContext)
-    const [menu, setMenu] = value.menu;
-
-
-    const toogleMenu = () => {
-        setMenu(!menu)
-    }
 
     return (
         <>
