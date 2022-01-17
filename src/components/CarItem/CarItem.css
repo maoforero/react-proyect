@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+
+.mainCart{
+    background-color: rgba(0,0,0,.6);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+
+}
+
 .container__mainCart{
     align-content: center;
     display: flex;
@@ -13,6 +25,7 @@
 }
 
 .container__cartItem{
+    background-color: rgb(255, 251, 251);
     border: 2px solid #27ae60;
     border-radius: 12px;
     display: flex;
@@ -20,7 +33,7 @@
     height: fit-content;
     margin: 65px;
     padding: 20px 30px;
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -35,11 +48,11 @@
     border-radius: 12px;
     background-color: rgb(238, 238, 238);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     min-height: 80px;
     padding:10px 30px;
-    width: 70%;
+    width: 50%;
 }
 
 .container__cartItem--products > .products--title{
@@ -47,3 +60,102 @@
     text-decoration: underline;
 }
 
+
+/* CARRITO CON ITEMS */
+
+.products--title{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.products--title > h3 {
+    font-size: 16px;
+}
+
+.container__cartItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__insidePart1{
+    align-items: center;
+    display: flex;
+}
+
+.carItem--mainImg{
+    border-radius: 12px;
+    height: 150px;
+    margin: 5px;
+}
+
+.cartItem--products--price{
+    margin: 5px 15px;
+}
+
+.cartItem--products--price > p {
+    font-size: 16px;
+}
+
+
+.container__cartItem--products{
+    display: flex;
+    flex-direction: row;
+}
+
+.cartItem--products--part1{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem--products--part2{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem--products--part3{
+    display: flex;
+    flex-direction: row;
+}
+
+.products--cuantity{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5px 25px;
+}
+
+/* Buttons */
+
+.carItem--addButton, .carItem--remButton, .carItem--delButton{
+    cursor: pointer;
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.carItem--addButton:hover, .carItem--remButton:hover, .carItem--delButton:hover{
+    background-color: #27ae60;
+    border-radius: 12px;
+}
+
+.cartItem__buy{
+    margin: 0 auto;
+}
+
+.cartItem__buy > button {
+    border: 1px solid #27ae60;
+    border-radius: 12px;
+    height: 25px;
+    margin-top: 50px;
+    width: 90px;
+}
+
+
+.cartItem__buy > button:hover{
+    border: none;
+    background-color:#27ae60 ;
+    color: white;
+}

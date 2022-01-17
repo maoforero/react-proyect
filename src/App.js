@@ -31,7 +31,8 @@ class App extends React.Component {
             <Route path="*" element={<Error/>} />
             <Route path='/shoppingcar' element={<CarItem/>}/>
           </Routes>
-        </div>  
+        </div>
+        <CarItem/>
       </Router>
     );
   };
