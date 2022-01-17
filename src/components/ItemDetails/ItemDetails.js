@@ -79,9 +79,7 @@ const ItemDetails = () => {
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
                                 <Link  className='carItem--Link' 
-                                to={{pathname:'/shoppingcar',
-                                state:{test:"prueba"}
-                            }}>
+                                to={{pathname:'/shoppingcar', state:{item:"prueba"}}}>
                                     <button className='buyTicket'>
                                         <img src={carritoIcon} alt="Boton de comprar" className='itemDetails--buyButton'/>
                                     </button>

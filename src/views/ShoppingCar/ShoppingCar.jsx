@@ -1,10 +1,15 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import CarItem from '../../components/CarItem/CarItem'
 import Footer from '../../components/Footer/Footer'
 
-const ShoppingCar = (props) => {
 
-    console.log(props)
+const ShoppingCar = () => {
+
+    const location = useLocation();
+    const { item } = location.state;
+
+    console.log(item)
 
     // const [cartItem, setCartItem] = useState([]);
 
