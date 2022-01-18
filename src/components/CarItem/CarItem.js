@@ -1,17 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import spydi from '../../assets/spydi.jpg';
 import trash from '../../assets/delete.png';
 import upArrow from '../../assets/up-arrow.png';
 import downArrow from '../../assets/arrow-down.png';
 import './CarItem.css';
-import { DataContext } from '../../context/context';
-import { useState } from 'react/cjs/react.development';
 
 const CarItem = () => {
     return (
-
-
-        
         <div className='mainCart show'>
             <div className='container__mainCart show'>
                 <div className='container__cartItem'>
@@ -19,7 +14,6 @@ const CarItem = () => {
                         <button className='close_cartItem'>x</button>
                     </div>
                     <h1 className='cartItem__mainTitle'>Carrito de compras</h1>
-                    
                     <div className='container__cartItem--products'>
                         <div className='cartItem--products--part1'>
                             <div className='products--title'>
@@ -62,24 +56,3 @@ const CarItem = () => {
 
 export default CarItem
 
-
-// { <div className='container__cartItem--products'>
-// {cartItem.length === 0 && 
-// <div className='products--title'>No existen productos seleccionados</div>}
-// </div>}
-// {
-// cartItem.map((item) => {
-//     <div key={item.id} className='container__cartItem--products'>
-//         <div className='products--title'>
-//             {item.name}
-//         </div>
-//         <div className='product--buttons'>
-//             <button onClick={() => setCartItem(item)} className='carItem--addButton'>+</button>
-//             <button onClick={() => setCartItem(item)} className='carItem--remButton'>-</button>
-//         </div>
-//         <div className='products--cuantity'>
-//             {item.qty} x ${item.price.toFixed(2)}
-//         </div>
-//     </div>
-// })
-// }
