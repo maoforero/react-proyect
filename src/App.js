@@ -14,6 +14,7 @@ import Error from './views/Error/Error';
 import ItemDetail from "./components/ItemDetails/ItemDetails";
 import Theater from "./views/Theater/Theater";
 import CarItem from "./components/CarItem/CarItem";
+import Cart from "./components/Cart/Cart";
 
 
 class App extends React.Component {
@@ -29,10 +30,9 @@ class App extends React.Component {
             <Route path="/teatro" element={<Theater info={"theater"}/>}/>
             <Route exact path="/itemdetail/:id" element={<ItemDetail/>} />
             <Route path="*" element={<Error/>} />
-            <Route path='/shoppingcar' element={<CarItem/>}/>
+            <Route path='/cart' element={<Cart/>} cartItems={0}/>
           </Routes>
         </div>
-        <CarItem/>
       </Router>
     );
   };

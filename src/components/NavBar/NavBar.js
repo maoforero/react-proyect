@@ -16,8 +16,7 @@ const NavBar = ({title}) => {
                         <NavLink className="NavBar--item" to="/" >Inicio</NavLink>
                         <NavLink className="NavBar--item" to="/movies" >Peliculas</NavLink>
                         <NavLink className="NavBar--item" to="/teatro" >Teatro</NavLink>  
-                        <NavLink to="/shoppingcar" className="active"><CartWidget/></NavLink>
-                        
+                        <NavLink to="/cart" className="active"><CartWidget/></NavLink>
                     </ul>
                 </nav>
             </div>

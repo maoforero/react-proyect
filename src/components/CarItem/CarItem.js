@@ -5,25 +5,18 @@ import upArrow from '../../assets/up-arrow.png';
 import downArrow from '../../assets/arrow-down.png';
 import './CarItem.css';
 import { DataContext } from '../../context/context';
+import { useState } from 'react/cjs/react.development';
 
 const CarItem = () => {
-
-    const value = useContext(DataContext);
-    const [menu, setMenu] = value.menu
-    
-    const toogleFalse = () => {
-        setMenu()
-    }
-
-    const show1 = menu ? "mainCart show" :"mainCart";
-    const show2 = menu ? "container__mainCartt show" : "container__mainCart";
-
     return (
+
+
+        
         <div className='mainCart show'>
             <div className='container__mainCart show'>
                 <div className='container__cartItem'>
                     <div className='cartItem__close'>
-                        <button className='close_cartItem' onClick={toogleFalse}>x</button>
+                        <button className='close_cartItem'>x</button>
                     </div>
                     <h1 className='cartItem__mainTitle'>Carrito de compras</h1>
                     
@@ -69,10 +62,6 @@ const CarItem = () => {
 
 export default CarItem
 
-// <div className='product--buttons'>
-// <button onClick={() => setCartItem(item)} className='carItem--addButton'>+</button>
-// <button onClick={() => setCartItem(item)} className='carItem--remButton'>-</button>
-// </div>
 
 // { <div className='container__cartItem--products'>
 // {cartItem.length === 0 && 

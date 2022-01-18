@@ -80,7 +80,7 @@ const ItemDetails = () => {
                         {click > 0 ?
                             <div className='mainItemDetails--buy'>
                                 <Link  className='carItem--Link' 
-                                    to={{pathname:'/shoppingcar',
+                                    to={{pathname:'/cart',
                                     state:{
                                         prueba:true}
                             }}>
